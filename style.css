@@ -70,11 +70,11 @@ nav li a:hover {
 }
 
 #styleButtons li {
-    display: inline-block
+    display: inline-block;
 }
 
 #styleButtons button {
-    display: inline-block
+    text-decoration: none;
 }
 
 
