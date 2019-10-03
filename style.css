@@ -22,7 +22,7 @@ header {
     /*border: green solid 5px;*/
     float: left;
     text-align: center;
-    margin: 0.75%;
+    content:url(logoBlack.png);
 }
 
 nav {
@@ -62,6 +62,21 @@ nav li a:hover {
     border-radius: 25px;
     font-weight: normal;
 }
+
+#styleButtons {
+    float: right;
+    margin-top: -3%;
+    margin-right: 2%;
+}
+
+#styleButtons li {
+    display: inline-block
+}
+
+#styleButtons button {
+    display: inline-block
+}
+
 
 #contactDetails {
     text-transform: bold;

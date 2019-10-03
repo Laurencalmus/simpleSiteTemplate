@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Simple Site Template</title>
+    <link rel="stylesheet" type="text/css" title="white" href="style.css">
+    <link rel="stylesheet" type="text/css" title="black" href="styleBlackHeader.css">
 </head>
-<body>
+<body onload="set_style_from_cookie()">
     <div class="wrapper">
         <header>
             <div id="logo">
                 <a href="index.html">
-                    <img src="logoBlack.png" alt="" style="">
+                    <img src="logoBlack.png" id="pic" alt="">
                 </a>
             </div>
             <nav>
@@ -22,6 +23,10 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
              </nav>
+             <ul id="styleButtons">
+                 <li> <button type="button" onclick="switch_style('white');return false;" name="theme" value="White Theme" id="white">white header theme</button></li>
+                 <li><button type="button" onclick="switch_style('black');return false;" name="theme" value="Black Header Theme" id="black">black header theme</button></li>
+             </ul>
         </header>
         <div id="main">
             <section id="first"><p>The sky calls to us corpus callosum brain is the seed of intelligence intelligent beings muse about rich in mystery. Dream of the mind's eye gathered by gravity are creatures of the cosmos rich in heavy atoms explorations made in the interiors of collapsing stars. Stirred by starlight a still more glorious dawn awaits courage of our questions something incredible is waiting to be known realm of the galaxies citizens of distant epochs and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p></section>
@@ -37,14 +42,16 @@
         </div>
     </div>
     <footer>
-            <h3>FOOTER HEADING</h3>
-            <p>footer footer footer</p>
-            <p>footer footer footer</p>
-            <p>footer footer footer</p>
-            <h3>FOOTER HEADING</h3>
-            <p>footer footer footer</p>
-            <p>footer footer footer</p>
-            <p>footer footer footer</p>
+        <h3>FOOTER HEADING</h3>
+        <p>footer footer footer</p>
+        <p>footer footer footer</p>
+        <p>footer footer footer</p>
+        <h3>FOOTER HEADING</h3>
+        <p>footer footer footer</p>
+        <p>footer footer footer</p>
+        <p>footer footer footer</p>
     </footer>
+
+    <script src="styleChange.js"></script>
 </body>
 </html>
