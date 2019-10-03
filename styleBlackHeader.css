@@ -24,6 +24,7 @@ header {
     float: left;
     text-align: center;
     margin: 0.75%;
+    content:url(logoWhite.png);
 }
 
 nav {
@@ -62,6 +63,26 @@ nav li a:hover {
     color: black;
     border-radius: 25px;
     font-weight: normal;
+}
+
+#styleButtons {
+    float: right;
+    margin-top: -3%;
+    margin-right: 2%;
+}
+
+#styleButtons li {
+    display: inline-block
+}
+
+#styleButtons button {
+    display: inline-block
+}
+
+#contactDetails {
+    text-transform: bold;
+    text-align: center;
+    padding: 15%;
 }
 
 #main {
