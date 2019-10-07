@@ -28,9 +28,9 @@ function switch_style ( css_title )
 }
 function set_style_from_cookie()
 {
-  var css_title = get_cookie( style_cookie_name ); ////problem
+  var css_title = get_cookie( style_cookie_name );
   if (css_title.length) {
-    switch_style( blackOrWhite );
+    switch_style( css_title );
   }
 }
 function set_cookie ( cookie_name, cookie_value,
@@ -54,11 +54,9 @@ function get_cookie ( cookie_name )
 		for (i = 0 ; i < cookie_array.length ; i++) {
 			cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
 			if (cookie_value != null) {
-        var blackOrWhite = decodeURIComponent ( cookie.value[1] ) ;
-				return blackOrWhite;
+				return decodeURIComponent ( cookie_value[1] ) ;
 			}
 		}
 	}
 	return '' ;
 }
-
