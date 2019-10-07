@@ -1,27 +1,8 @@
-
-    /*function changeCSS(cssFile, cssLinkIndex) {
-
-        var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-    
-        var newlink = document.createElement("link");
-        newlink.setAttribute("rel", "stylesheet");
-        newlink.setAttribute("type", "text/css");
-        newlink.setAttribute("href", cssFile);
-    
-    
-        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink,);
-    }
-    
-    html buttons:
-     <li> <button type="button" onclick="changeCSS('style.css',0);return false;" name="theme" value="White Theme" id="white">white header theme</button></li>
-                 <li><button type="button" onclick="changeCSS('styleBlackHeader.css',0);return false;" name="theme" value="Black Header Theme" id="black">black header theme</button></li>
-    */
-
-    // *** TO BE CUSTOMISED ***
+// *** TO BE CUSTOMISED ***
 
 var style_cookie_name = "style" ;
 var style_cookie_duration = 30 ;
-var style_domain = "https://laurencalmus.github.io/simpleSiteTemplate/" ;
+var style_domain = "laurencalmus.github.io/simpleSite" ;
 
 // *** END OF CUSTOMISABLE SECTION ***
 // You do not need to customise anything below this line
@@ -47,7 +28,7 @@ function switch_style ( css_title )
 }
 function set_style_from_cookie()
 {
-  var css_title = get_cookie( style_cookie_name );
+  var css_title = get_cookie( style_cookie_name ); ////problem
   if (css_title.length) {
     switch_style( css_title );
   }
@@ -73,12 +54,10 @@ function get_cookie ( cookie_name )
 		for (i = 0 ; i < cookie_array.length ; i++) {
 			cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
 			if (cookie_value != null) {
-				return decodeURIComponent ( cookie_value[1] ) ;
+				return decodeURIComponent ( document.cookie[1] ) ;
 			}
 		}
 	}
 	return '' ;
 }
-
-
 
