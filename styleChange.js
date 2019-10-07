@@ -39,11 +39,11 @@ function set_cookie ( cookie_name, cookie_value,
     // https://www.thesitewizard.com/javascripts/cookies.shtml
     var domain_string = valid_domain ?
                        ("; domain=" + valid_domain) : '' ;
-    document.cookie = cookie_name +
-                       "=" + encodeURIComponent( cookie_value ) +
-                       "; max-age=" + 60 * 60 *
-                       24 * lifespan_in_days +
-                       "; path=/" + domain_string ;
+    document.cookie =  "name=" + cookie_name + 
+                       "; value= " + cookie_value +                         
+                       "; max-age=" + 60 * 60 * 24 * lifespan_in_days + 
+                       "; domain=" + domain_string + 
+                       "; path=/;";
 }
 function get_cookie ( cookie_name )
 {
