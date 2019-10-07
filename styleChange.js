@@ -2,7 +2,7 @@
 
 var style_cookie_name = "style" ;
 var style_cookie_duration = 30 ;
-var style_domain = "laurencalmus.github.io/simpleSite" ;
+var style_domain = "laurencalmus.github.io/simpleSiteTemplate/" ;
 
 // *** END OF CUSTOMISABLE SECTION ***
 // You do not need to customise anything below this line
@@ -30,7 +30,7 @@ function set_style_from_cookie()
 {
   var css_title = get_cookie( style_cookie_name ); ////problem
   if (css_title.length) {
-    switch_style( css_title );
+    switch_style( blackOrWhite );
   }
 }
 function set_cookie ( cookie_name, cookie_value,
@@ -54,7 +54,8 @@ function get_cookie ( cookie_name )
 		for (i = 0 ; i < cookie_array.length ; i++) {
 			cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
 			if (cookie_value != null) {
-				return decodeURIComponent ( document.cookie[1] ) ;
+        var blackOrWhite = decodeURIComponent ( document.cookie[1] ) ;
+				return blackOrWhite;
 			}
 		}
 	}
