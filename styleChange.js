@@ -2,7 +2,7 @@
 
 var style_cookie_name = "style" ;
 var style_cookie_duration = 30 ;
-var style_domain = "laurencalmus.github.io/simpleSiteTemplate/" ;
+var style_domain = "laurencalmus.github.io/simpleSiteTemplate" ;
 
 // *** END OF CUSTOMISABLE SECTION ***
 // You do not need to customise anything below this line
