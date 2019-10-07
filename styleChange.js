@@ -54,7 +54,7 @@ function get_cookie ( cookie_name )
 		for (i = 0 ; i < cookie_array.length ; i++) {
 			cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
 			if (cookie_value != null) {
-        var blackOrWhite = decodeURIComponent ( document.cookie[1] ) ;
+        var blackOrWhite = decodeURIComponent ( cookie.value[1] ) ;
 				return blackOrWhite;
 			}
 		}
