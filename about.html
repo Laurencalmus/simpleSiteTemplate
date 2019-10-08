@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" title="white" href="style.css">
-    <link rel="stylesheet" type="text/css" title="black" href="styleBlackHeader.css">
+    <!--<link rel="stylesheet" type="text/css" title="black" href="styleBlackHeader.css">-->
 </head>
-<body onload="set_style_from_cookie()">
+<body>
     <div class="wrapper">
         <header>
             <div id="logo">
@@ -24,8 +24,8 @@
                 </ul>
              </nav>
              <ul id="styleButtons">
-                <li> <button type="button" onclick="switch_style('white');return false;" name="theme" value="White Theme" id="white">white header theme</button></li>
-                <li><button type="button" onclick="switch_style('black');return false;" name="theme" value="Black Header Theme" id="black">black header theme</button></li>
+                <li> <button id="white" type="button"  name="theme" value="white"> white header theme</button></li>
+                <li><button id="black" type="button" name="theme" value="black"> black header theme</button></li>
             </ul>
         </header>
         <div id="main">
@@ -41,7 +41,6 @@
             </p></section>
         </div>
     </div>
-    <footer>
             <footer>
                     <h3>FOOTER HEADING</h3>
                     <p>footer footer footer</p>
@@ -53,6 +52,9 @@
                     <p>footer footer footer</p>
                 </footer>            
 
-    <script src="styleChange.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/JavaScript" script src="cookie.js"></script>
+    <script type="text/JavaScript">
+    </script>
 </body>
 </html>
